@@ -1,0 +1,91 @@
+MAIN: Beginning execution
+MAIN: datafile  'xpidigitssplit.txt'
+
+TIME***********************************************************************
+TIME CPU percent    0.00   0.00                    Sun Aug 21 09:31:46 2016
+TIME beginning             0.00 u         0.01 s   Res:      737280
+TIME beginning             0.00 u_t       0.01 s_t
+TIME***********************************************************************
+
+
+
+UTILS: open the input file 'xpidigitssplit.txt'
+UTILS: open succeeded for 'xpidigitssplit.txt'
+UTILS: close the input file
+UTILS: the input file was closed
+UTILS: open the input file 'xpatternpidigits'
+UTILS: open succeeded for 'xpatternpidigits'
+UTILS: close the input file
+UTILS: the input file was closed
+12345
+14159
+24680
+99090
+111
+1111
+11111
+86 208
+
+enter FindMatches
+
+find matches of pattern '12345'
+EXTRA COMPS FOR 12345 2256
+
+find matches of pattern '14159'
+MATCH AT 3 14159
+MATCH AT 7046 14159
+EXTRA COMPS FOR 14159 2291
+
+find matches of pattern '24680'
+MATCH AT 2276 24680
+MATCH AT 9416 24680
+EXTRA COMPS FOR 24680 2235
+
+find matches of pattern '99090'
+MATCH AT 2099 99090
+EXTRA COMPS FOR 99090 2289
+
+find matches of pattern '111'
+MATCH AT 997 111
+MATCH AT 3549 111
+MATCH AT 4045 111
+MATCH AT 4567 111
+MATCH AT 6196 111
+MATCH AT 6892 111
+MATCH AT 7054 111
+MATCH AT 8475 111
+MATCH AT 11882 111
+MATCH AT 12689 111
+MATCH AT 12774 111
+MATCH AT 12864 111
+MATCH AT 12865 111
+MATCH AT 13773 111
+MATCH AT 14561 111
+MATCH AT 15386 111
+MATCH AT 16948 111
+MATCH AT 16949 111
+MATCH AT 19880 111
+EXTRA COMPS FOR 111 2246
+
+find matches of pattern '1111'
+MATCH AT 12864 1111
+MATCH AT 16948 1111
+EXTRA COMPS FOR 1111 2265
+
+find matches of pattern '11111'
+EXTRA COMPS FOR 11111 2267
+
+find matches of pattern '86 208'
+MATCH AT 76 86 208
+EXTRA COMPS FOR 86 208 2211
+leave FindMatches
+MAIN: Ending execution
+
+TIME***********************************************************************
+TIME CPU percent    0.00   0.00                    Sun Aug 21 09:31:46 2016
+TIME ending                0.00 u         0.00 s   Res:      921600
+TIME ending                0.00 u_t       0.01 s_t
+TIME***********************************************************************
+
+
+

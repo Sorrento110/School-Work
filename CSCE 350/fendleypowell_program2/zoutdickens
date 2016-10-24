@@ -1,0 +1,635 @@
+MAIN: Beginning execution
+MAIN: datafile  'xdickenstextonly.txt'
+
+TIME***********************************************************************
+TIME CPU percent    0.00   0.00                    Sun Aug 21 09:31:49 2016
+TIME beginning             0.00 u         0.01 s   Res:      745472
+TIME beginning             0.00 u_t       0.01 s_t
+TIME***********************************************************************
+
+
+
+UTILS: open the input file 'xdickenstextonly.txt'
+UTILS: open succeeded for 'xdickenstextonly.txt'
+UTILS: close the input file
+UTILS: the input file was closed
+UTILS: open the input file 'xpatterndickens'
+UTILS: open succeeded for 'xpatterndickens'
+UTILS: close the input file
+UTILS: the input file was closed
+a background of
+a centre point
+bearers you can
+charles let them
+doing no service
+empty my father
+friend miss pross
+guard and from
+jacques three is
+stabs and blows
+that he was
+one of the
+it was the
+the mender of
+it was a
+mender of roads
+said miss pross
+there was a
+out of the
+said mr lorry
+
+enter FindMatches
+
+find matches of pattern 'a background of'
+MATCH AT 421898 a background of
+EXTRA COMPS FOR a background of 51531
+
+find matches of pattern 'a centre point'
+MATCH AT 407777 a centre point
+EXTRA COMPS FOR a centre point 51625
+
+find matches of pattern 'bearers you can'
+MATCH AT 452055 bearers you can
+EXTRA COMPS FOR bearers you can 11636
+
+find matches of pattern 'charles let them'
+MATCH AT 553085 charles let them
+EXTRA COMPS FOR charles let them 17401
+
+find matches of pattern 'doing no service'
+MATCH AT 285038 doing no service
+EXTRA COMPS FOR doing no service 29835
+
+find matches of pattern 'empty my father'
+MATCH AT 258359 empty my father
+EXTRA COMPS FOR empty my father 76519
+
+find matches of pattern 'friend miss pross'
+MATCH AT 704070 friend miss pross
+EXTRA COMPS FOR friend miss pross 15131
+
+find matches of pattern 'guard and from'
+MATCH AT 12822 guard and from
+EXTRA COMPS FOR guard and from 13168
+
+find matches of pattern 'jacques three is'
+MATCH AT 687941 jacques three is
+EXTRA COMPS FOR jacques three is 1485
+
+find matches of pattern 'stabs and blows'
+MATCH AT 417189 stabs and blows
+EXTRA COMPS FOR stabs and blows 42680
+
+find matches of pattern 'that he was'
+MATCH AT 21255 that he was
+MATCH AT 89776 that he was
+MATCH AT 115550 that he was
+MATCH AT 127975 that he was
+MATCH AT 128310 that he was
+MATCH AT 128365 that he was
+MATCH AT 133047 that he was
+MATCH AT 133157 that he was
+MATCH AT 189547 that he was
+MATCH AT 201175 that he was
+MATCH AT 226168 that he was
+MATCH AT 290315 that he was
+MATCH AT 297060 that he was
+MATCH AT 320996 that he was
+MATCH AT 372994 that he was
+MATCH AT 375980 that he was
+MATCH AT 384929 that he was
+MATCH AT 386356 that he was
+MATCH AT 461570 that he was
+MATCH AT 463968 that he was
+MATCH AT 477339 that he was
+MATCH AT 519563 that he was
+MATCH AT 549885 that he was
+MATCH AT 578267 that he was
+MATCH AT 578317 that he was
+MATCH AT 620659 that he was
+MATCH AT 665489 that he was
+MATCH AT 679876 that he was
+MATCH AT 688963 that he was
+MATCH AT 691684 that he was
+EXTRA COMPS FOR that he was 79084
+
+find matches of pattern 'one of the'
+MATCH AT 9804 one of the
+MATCH AT 11771 one of the
+MATCH AT 18602 one of the
+MATCH AT 25823 one of the
+MATCH AT 39965 one of the
+MATCH AT 61848 one of the
+MATCH AT 88696 one of the
+MATCH AT 92584 one of the
+MATCH AT 92944 one of the
+MATCH AT 94783 one of the
+MATCH AT 106621 one of the
+MATCH AT 107170 one of the
+MATCH AT 128322 one of the
+MATCH AT 128381 one of the
+MATCH AT 128433 one of the
+MATCH AT 138381 one of the
+MATCH AT 150538 one of the
+MATCH AT 180574 one of the
+MATCH AT 189964 one of the
+MATCH AT 193563 one of the
+MATCH AT 194696 one of the
+MATCH AT 220278 one of the
+MATCH AT 224086 one of the
+MATCH AT 224364 one of the
+MATCH AT 255598 one of the
+MATCH AT 265422 one of the
+MATCH AT 268871 one of the
+MATCH AT 331086 one of the
+MATCH AT 334610 one of the
+MATCH AT 411919 one of the
+MATCH AT 414420 one of the
+MATCH AT 427105 one of the
+MATCH AT 427928 one of the
+MATCH AT 431179 one of the
+MATCH AT 472566 one of the
+MATCH AT 473284 one of the
+MATCH AT 504895 one of the
+MATCH AT 505317 one of the
+MATCH AT 509545 one of the
+MATCH AT 515822 one of the
+MATCH AT 535555 one of the
+MATCH AT 539106 one of the
+MATCH AT 566948 one of the
+MATCH AT 593877 one of the
+MATCH AT 596412 one of the
+MATCH AT 597326 one of the
+MATCH AT 602597 one of the
+MATCH AT 608925 one of the
+MATCH AT 609933 one of the
+MATCH AT 610709 one of the
+MATCH AT 615551 one of the
+MATCH AT 616067 one of the
+MATCH AT 625745 one of the
+MATCH AT 639467 one of the
+MATCH AT 646951 one of the
+MATCH AT 672896 one of the
+MATCH AT 678922 one of the
+MATCH AT 714645 one of the
+MATCH AT 716745 one of the
+MATCH AT 721198 one of the
+EXTRA COMPS FOR one of the 55720
+
+find matches of pattern 'it was the'
+MATCH AT 2046 it was the
+MATCH AT 2071 it was the
+MATCH AT 2097 it was the
+MATCH AT 2122 it was the
+MATCH AT 2152 it was the
+MATCH AT 2179 it was the
+MATCH AT 2211 it was the
+MATCH AT 2238 it was the
+MATCH AT 2268 it was the
+MATCH AT 2294 it was the
+MATCH AT 2968 it was the
+MATCH AT 7687 it was the
+MATCH AT 10329 it was the
+MATCH AT 73419 it was the
+MATCH AT 136840 it was the
+MATCH AT 192459 it was the
+MATCH AT 202791 it was the
+MATCH AT 225815 it was the
+MATCH AT 246667 it was the
+MATCH AT 342055 it was the
+MATCH AT 355991 it was the
+MATCH AT 367969 it was the
+MATCH AT 434719 it was the
+MATCH AT 447487 it was the
+MATCH AT 467099 it was the
+MATCH AT 484382 it was the
+MATCH AT 523758 it was the
+MATCH AT 523793 it was the
+MATCH AT 523928 it was the
+MATCH AT 524057 it was the
+MATCH AT 529368 it was the
+MATCH AT 539555 it was the
+MATCH AT 557753 it was the
+MATCH AT 600410 it was the
+MATCH AT 609107 it was the
+MATCH AT 617350 it was the
+MATCH AT 628922 it was the
+MATCH AT 629043 it was the
+MATCH AT 634022 it was the
+MATCH AT 642830 it was the
+MATCH AT 721098 it was the
+EXTRA COMPS FOR it was the 50521
+
+find matches of pattern 'the mender of'
+MATCH AT 221439 the mender of
+MATCH AT 238022 the mender of
+MATCH AT 242142 the mender of
+MATCH AT 242943 the mender of
+MATCH AT 313289 the mender of
+MATCH AT 314776 the mender of
+MATCH AT 314994 the mender of
+MATCH AT 315275 the mender of
+MATCH AT 315579 the mender of
+MATCH AT 315713 the mender of
+MATCH AT 316321 the mender of
+MATCH AT 319145 the mender of
+MATCH AT 323212 the mender of
+MATCH AT 323803 the mender of
+MATCH AT 325621 the mender of
+MATCH AT 327647 the mender of
+MATCH AT 328661 the mender of
+MATCH AT 329335 the mender of
+MATCH AT 329834 the mender of
+MATCH AT 330602 the mender of
+MATCH AT 330903 the mender of
+MATCH AT 430835 the mender of
+MATCH AT 432960 the mender of
+MATCH AT 433452 the mender of
+MATCH AT 434356 the mender of
+MATCH AT 434738 the mender of
+MATCH AT 434849 the mender of
+MATCH AT 434939 the mender of
+MATCH AT 435209 the mender of
+MATCH AT 436561 the mender of
+MATCH AT 437135 the mender of
+MATCH AT 437635 the mender of
+MATCH AT 437846 the mender of
+MATCH AT 440382 the mender of
+MATCH AT 441173 the mender of
+MATCH AT 441578 the mender of
+MATCH AT 444794 the mender of
+EXTRA COMPS FOR the mender of 93025
+
+find matches of pattern 'it was a'
+MATCH AT 19112 it was a
+MATCH AT 19218 it was a
+MATCH AT 34400 it was a
+MATCH AT 59498 it was a
+MATCH AT 64957 it was a
+MATCH AT 94142 it was a
+MATCH AT 100745 it was a
+MATCH AT 122660 it was a
+MATCH AT 132362 it was a
+MATCH AT 133544 it was a
+MATCH AT 146908 it was a
+MATCH AT 148249 it was a
+MATCH AT 170986 it was a
+MATCH AT 180929 it was a
+MATCH AT 185559 it was a
+MATCH AT 191898 it was a
+MATCH AT 205303 it was a
+MATCH AT 219157 it was a
+MATCH AT 222176 it was a
+MATCH AT 243759 it was a
+MATCH AT 245607 it was a
+MATCH AT 246474 it was a
+MATCH AT 258185 it was a
+MATCH AT 266875 it was a
+MATCH AT 269572 it was a
+MATCH AT 276540 it was a
+MATCH AT 299851 it was a
+MATCH AT 303679 it was a
+MATCH AT 305294 it was a
+MATCH AT 305319 it was a
+MATCH AT 322824 it was a
+MATCH AT 328793 it was a
+MATCH AT 328892 it was a
+MATCH AT 357249 it was a
+MATCH AT 357341 it was a
+MATCH AT 357479 it was a
+MATCH AT 357642 it was a
+MATCH AT 367224 it was a
+MATCH AT 369719 it was a
+MATCH AT 369815 it was a
+MATCH AT 372320 it was a
+MATCH AT 391868 it was a
+MATCH AT 404136 it was a
+MATCH AT 406147 it was a
+MATCH AT 430099 it was a
+MATCH AT 433508 it was a
+MATCH AT 455021 it was a
+MATCH AT 467625 it was a
+MATCH AT 467732 it was a
+MATCH AT 509575 it was a
+MATCH AT 520317 it was a
+MATCH AT 532219 it was a
+MATCH AT 537580 it was a
+MATCH AT 553736 it was a
+MATCH AT 562308 it was a
+MATCH AT 568745 it was a
+MATCH AT 576962 it was a
+MATCH AT 583294 it was a
+MATCH AT 584826 it was a
+MATCH AT 586315 it was a
+MATCH AT 593559 it was a
+MATCH AT 623338 it was a
+MATCH AT 628738 it was a
+MATCH AT 649020 it was a
+MATCH AT 655901 it was a
+MATCH AT 669393 it was a
+MATCH AT 680146 it was a
+MATCH AT 695520 it was a
+MATCH AT 699830 it was a
+EXTRA COMPS FOR it was a 50419
+
+find matches of pattern 'mender of roads'
+MATCH AT 221443 mender of roads
+MATCH AT 238026 mender of roads
+MATCH AT 241839 mender of roads
+MATCH AT 242146 mender of roads
+MATCH AT 242947 mender of roads
+MATCH AT 312220 mender of roads
+MATCH AT 313052 mender of roads
+MATCH AT 313168 mender of roads
+MATCH AT 313293 mender of roads
+MATCH AT 314780 mender of roads
+MATCH AT 314998 mender of roads
+MATCH AT 315279 mender of roads
+MATCH AT 315583 mender of roads
+MATCH AT 315717 mender of roads
+MATCH AT 316325 mender of roads
+MATCH AT 319149 mender of roads
+MATCH AT 323216 mender of roads
+MATCH AT 323807 mender of roads
+MATCH AT 325625 mender of roads
+MATCH AT 327651 mender of roads
+MATCH AT 328665 mender of roads
+MATCH AT 329339 mender of roads
+MATCH AT 329838 mender of roads
+MATCH AT 330606 mender of roads
+MATCH AT 330907 mender of roads
+MATCH AT 430839 mender of roads
+MATCH AT 432964 mender of roads
+MATCH AT 433456 mender of roads
+MATCH AT 433622 mender of roads
+MATCH AT 434360 mender of roads
+MATCH AT 434742 mender of roads
+MATCH AT 434853 mender of roads
+MATCH AT 434943 mender of roads
+MATCH AT 435213 mender of roads
+MATCH AT 436565 mender of roads
+MATCH AT 437139 mender of roads
+MATCH AT 437639 mender of roads
+MATCH AT 437850 mender of roads
+MATCH AT 440386 mender of roads
+MATCH AT 441177 mender of roads
+MATCH AT 441582 mender of roads
+MATCH AT 444798 mender of roads
+MATCH AT 529916 mender of roads
+MATCH AT 687718 mender of roads
+EXTRA COMPS FOR mender of roads 20203
+
+find matches of pattern 'said miss pross'
+MATCH AT 175030 said miss pross
+MATCH AT 175261 said miss pross
+MATCH AT 175294 said miss pross
+MATCH AT 175438 said miss pross
+MATCH AT 175748 said miss pross
+MATCH AT 175805 said miss pross
+MATCH AT 176314 said miss pross
+MATCH AT 176577 said miss pross
+MATCH AT 178120 said miss pross
+MATCH AT 179133 said miss pross
+MATCH AT 179359 said miss pross
+MATCH AT 180541 said miss pross
+MATCH AT 181278 said miss pross
+MATCH AT 182504 said miss pross
+MATCH AT 363722 said miss pross
+MATCH AT 364014 said miss pross
+MATCH AT 555718 said miss pross
+MATCH AT 555962 said miss pross
+MATCH AT 556241 said miss pross
+MATCH AT 556332 said miss pross
+MATCH AT 556547 said miss pross
+MATCH AT 557098 said miss pross
+MATCH AT 557163 said miss pross
+MATCH AT 557683 said miss pross
+MATCH AT 558024 said miss pross
+MATCH AT 697413 said miss pross
+MATCH AT 697814 said miss pross
+MATCH AT 698897 said miss pross
+MATCH AT 700144 said miss pross
+MATCH AT 700573 said miss pross
+MATCH AT 700968 said miss pross
+MATCH AT 701138 said miss pross
+MATCH AT 703657 said miss pross
+MATCH AT 704408 said miss pross
+MATCH AT 705435 said miss pross
+MATCH AT 705831 said miss pross
+MATCH AT 707106 said miss pross
+MATCH AT 707403 said miss pross
+MATCH AT 707938 said miss pross
+MATCH AT 708587 said miss pross
+MATCH AT 710688 said miss pross
+MATCH AT 710769 said miss pross
+MATCH AT 711113 said miss pross
+MATCH AT 711447 said miss pross
+EXTRA COMPS FOR said miss pross 41954
+
+find matches of pattern 'there was a'
+MATCH AT 9108 there was a
+MATCH AT 23496 there was a
+MATCH AT 26456 there was a
+MATCH AT 48874 there was a
+MATCH AT 52081 there was a
+MATCH AT 60334 there was a
+MATCH AT 77148 there was a
+MATCH AT 92892 there was a
+MATCH AT 117100 there was a
+MATCH AT 161405 there was a
+MATCH AT 182091 there was a
+MATCH AT 190499 there was a
+MATCH AT 202138 there was a
+MATCH AT 206658 there was a
+MATCH AT 214422 there was a
+MATCH AT 219067 there was a
+MATCH AT 236404 there was a
+MATCH AT 248062 there was a
+MATCH AT 248792 there was a
+MATCH AT 268990 there was a
+MATCH AT 288031 there was a
+MATCH AT 304479 there was a
+MATCH AT 326881 there was a
+MATCH AT 357391 there was a
+MATCH AT 388173 there was a
+MATCH AT 390296 there was a
+MATCH AT 414028 there was a
+MATCH AT 414190 there was a
+MATCH AT 414256 there was a
+MATCH AT 414314 there was a
+MATCH AT 420977 there was a
+MATCH AT 430767 there was a
+MATCH AT 440063 there was a
+MATCH AT 455877 there was a
+MATCH AT 489397 there was a
+MATCH AT 494760 there was a
+MATCH AT 502944 there was a
+MATCH AT 520242 there was a
+MATCH AT 536960 there was a
+MATCH AT 548966 there was a
+MATCH AT 571969 there was a
+MATCH AT 592454 there was a
+MATCH AT 602622 there was a
+MATCH AT 618592 there was a
+MATCH AT 619837 there was a
+MATCH AT 635271 there was a
+MATCH AT 635979 there was a
+MATCH AT 640180 there was a
+MATCH AT 643638 there was a
+MATCH AT 649186 there was a
+MATCH AT 658929 there was a
+MATCH AT 665936 there was a
+MATCH AT 673418 there was a
+EXTRA COMPS FOR there was a 87310
+
+find matches of pattern 'out of the'
+MATCH AT 6634 out of the
+MATCH AT 12738 out of the
+MATCH AT 21931 out of the
+MATCH AT 25620 out of the
+MATCH AT 54736 out of the
+MATCH AT 92075 out of the
+MATCH AT 96393 out of the
+MATCH AT 101598 out of the
+MATCH AT 131161 out of the
+MATCH AT 131572 out of the
+MATCH AT 136014 out of the
+MATCH AT 148176 out of the
+MATCH AT 158794 out of the
+MATCH AT 167840 out of the
+MATCH AT 171604 out of the
+MATCH AT 193201 out of the
+MATCH AT 201063 out of the
+MATCH AT 201146 out of the
+MATCH AT 201210 out of the
+MATCH AT 206241 out of the
+MATCH AT 208275 out of the
+MATCH AT 211252 out of the
+MATCH AT 218593 out of the
+MATCH AT 232030 out of the
+MATCH AT 275734 out of the
+MATCH AT 301726 out of the
+MATCH AT 302901 out of the
+MATCH AT 305509 out of the
+MATCH AT 310325 out of the
+MATCH AT 311420 out of the
+MATCH AT 314066 out of the
+MATCH AT 314103 out of the
+MATCH AT 314138 out of the
+MATCH AT 314180 out of the
+MATCH AT 314400 out of the
+MATCH AT 341456 out of the
+MATCH AT 350875 out of the
+MATCH AT 358238 out of the
+MATCH AT 367489 out of the
+MATCH AT 402714 out of the
+MATCH AT 404946 out of the
+MATCH AT 407508 out of the
+MATCH AT 425169 out of the
+MATCH AT 428941 out of the
+MATCH AT 429900 out of the
+MATCH AT 430882 out of the
+MATCH AT 442120 out of the
+MATCH AT 501029 out of the
+MATCH AT 502656 out of the
+MATCH AT 540066 out of the
+MATCH AT 545911 out of the
+MATCH AT 549418 out of the
+MATCH AT 551131 out of the
+MATCH AT 562247 out of the
+MATCH AT 569800 out of the
+MATCH AT 589296 out of the
+MATCH AT 603462 out of the
+MATCH AT 614766 out of the
+MATCH AT 677829 out of the
+MATCH AT 685422 out of the
+MATCH AT 698303 out of the
+MATCH AT 701001 out of the
+MATCH AT 705317 out of the
+EXTRA COMPS FOR out of the 55322
+
+find matches of pattern 'said mr lorry'
+MATCH AT 14561 said mr lorry
+MATCH AT 36278 said mr lorry
+MATCH AT 37606 said mr lorry
+MATCH AT 38019 said mr lorry
+MATCH AT 42148 said mr lorry
+MATCH AT 46632 said mr lorry
+MATCH AT 49816 said mr lorry
+MATCH AT 49893 said mr lorry
+MATCH AT 67833 said mr lorry
+MATCH AT 78323 said mr lorry
+MATCH AT 88108 said mr lorry
+MATCH AT 173010 said mr lorry
+MATCH AT 174645 said mr lorry
+MATCH AT 175521 said mr lorry
+MATCH AT 175987 said mr lorry
+MATCH AT 176706 said mr lorry
+MATCH AT 193169 said mr lorry
+MATCH AT 269403 said mr lorry
+MATCH AT 270664 said mr lorry
+MATCH AT 270797 said mr lorry
+MATCH AT 270859 said mr lorry
+MATCH AT 271354 said mr lorry
+MATCH AT 272139 said mr lorry
+MATCH AT 272438 said mr lorry
+MATCH AT 273091 said mr lorry
+MATCH AT 274446 said mr lorry
+MATCH AT 277244 said mr lorry
+MATCH AT 277600 said mr lorry
+MATCH AT 363196 said mr lorry
+MATCH AT 364126 said mr lorry
+MATCH AT 364780 said mr lorry
+MATCH AT 378597 said mr lorry
+MATCH AT 380736 said mr lorry
+MATCH AT 382524 said mr lorry
+MATCH AT 383823 said mr lorry
+MATCH AT 383930 said mr lorry
+MATCH AT 386139 said mr lorry
+MATCH AT 386569 said mr lorry
+MATCH AT 386783 said mr lorry
+MATCH AT 388287 said mr lorry
+MATCH AT 404292 said mr lorry
+MATCH AT 406187 said mr lorry
+MATCH AT 448840 said mr lorry
+MATCH AT 448997 said mr lorry
+MATCH AT 451727 said mr lorry
+MATCH AT 455668 said mr lorry
+MATCH AT 458720 said mr lorry
+MATCH AT 466354 said mr lorry
+MATCH AT 466460 said mr lorry
+MATCH AT 466934 said mr lorry
+MATCH AT 496149 said mr lorry
+MATCH AT 504336 said mr lorry
+MATCH AT 507432 said mr lorry
+MATCH AT 508152 said mr lorry
+MATCH AT 508472 said mr lorry
+MATCH AT 509982 said mr lorry
+MATCH AT 510273 said mr lorry
+MATCH AT 510553 said mr lorry
+MATCH AT 513985 said mr lorry
+MATCH AT 514268 said mr lorry
+MATCH AT 574610 said mr lorry
+MATCH AT 587159 said mr lorry
+MATCH AT 587468 said mr lorry
+MATCH AT 589576 said mr lorry
+MATCH AT 590990 said mr lorry
+MATCH AT 591809 said mr lorry
+MATCH AT 594357 said mr lorry
+MATCH AT 596900 said mr lorry
+MATCH AT 597055 said mr lorry
+MATCH AT 646888 said mr lorry
+MATCH AT 658986 said mr lorry
+MATCH AT 663035 said mr lorry
+EXTRA COMPS FOR said mr lorry 42112
+leave FindMatches
+MAIN: Ending execution
+
+TIME***********************************************************************
+TIME CPU percent   24.39  25.24                    Sun Aug 21 09:31:50 2016
+TIME ending                0.24 u         0.01 s   Res:    10665984
+TIME ending                0.24 u_t       0.01 s_t
+TIME***********************************************************************
+
+
+

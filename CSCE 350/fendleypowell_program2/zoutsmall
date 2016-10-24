@@ -1,0 +1,113 @@
+MAIN: Beginning execution
+MAIN: datafile  'xsmalltesttext.txt'
+
+TIME***********************************************************************
+TIME CPU percent    0.00   0.00                    Sun Aug 21 09:31:54 2016
+TIME beginning             0.00 u         0.01 s   Res:      737280
+TIME beginning             0.00 u_t       0.01 s_t
+TIME***********************************************************************
+
+
+
+UTILS: open the input file 'xsmalltesttext.txt'
+UTILS: open succeeded for 'xsmalltesttext.txt'
+UTILS: close the input file
+UTILS: the input file was closed
+UTILS: open the input file 'xpatterndickens'
+UTILS: open succeeded for 'xpatterndickens'
+UTILS: close the input file
+UTILS: the input file was closed
+a background of
+a centre point
+bearers you can
+charles let them
+doing no service
+empty my father
+friend miss pross
+guard and from
+jacques three is
+stabs and blows
+that he was
+one of the
+it was the
+the mender of
+it was a
+mender of roads
+said miss pross
+there was a
+out of the
+said mr lorry
+
+enter FindMatches
+
+find matches of pattern 'a background of'
+EXTRA COMPS FOR a background of 12
+
+find matches of pattern 'a centre point'
+EXTRA COMPS FOR a centre point 12
+
+find matches of pattern 'bearers you can'
+EXTRA COMPS FOR bearers you can 3
+
+find matches of pattern 'charles let them'
+EXTRA COMPS FOR charles let them 3
+
+find matches of pattern 'doing no service'
+EXTRA COMPS FOR doing no service 10
+
+find matches of pattern 'empty my father'
+EXTRA COMPS FOR empty my father 18
+
+find matches of pattern 'friend miss pross'
+EXTRA COMPS FOR friend miss pross 6
+
+find matches of pattern 'guard and from'
+EXTRA COMPS FOR guard and from 9
+
+find matches of pattern 'jacques three is'
+EXTRA COMPS FOR jacques three is 1
+
+find matches of pattern 'stabs and blows'
+EXTRA COMPS FOR stabs and blows 13
+
+find matches of pattern 'that he was'
+EXTRA COMPS FOR that he was 22
+
+find matches of pattern 'one of the'
+EXTRA COMPS FOR one of the 15
+
+find matches of pattern 'it was the'
+EXTRA COMPS FOR it was the 11
+
+find matches of pattern 'the mender of'
+EXTRA COMPS FOR the mender of 26
+
+find matches of pattern 'it was a'
+EXTRA COMPS FOR it was a 11
+
+find matches of pattern 'mender of roads'
+EXTRA COMPS FOR mender of roads 8
+
+find matches of pattern 'said miss pross'
+EXTRA COMPS FOR said miss pross 17
+
+find matches of pattern 'there was a'
+EXTRA COMPS FOR there was a 23
+
+find matches of pattern 'out of the'
+EXTRA COMPS FOR out of the 15
+
+find matches of pattern 'said mr lorry'
+MATCH AT 119 said mr lorry
+EXTRA COMPS FOR said mr lorry 23
+leave FindMatches
+MAIN: Ending execution
+
+TIME***********************************************************************
+TIME CPU percent    0.00   0.00                    Sun Aug 21 09:31:54 2016
+TIME ending                0.00 u         0.00 s   Res:      798720
+TIME ending                0.00 u_t       0.01 s_t
+TIME***********************************************************************
+
+
+

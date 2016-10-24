@@ -1,0 +1,49 @@
+MAIN: Beginning execution
+MAIN: datafile  'xdna'
+
+TIME***********************************************************************
+TIME CPU percent    0.00   0.00                    Sun Aug 21 09:31:36 2016
+TIME beginning             0.00 u         0.01 s   Res:      737280
+TIME beginning             0.00 u_t       0.01 s_t
+TIME***********************************************************************
+
+
+
+UTILS: open the input file 'xdna'
+UTILS: open succeeded for 'xdna'
+UTILS: close the input file
+UTILS: the input file was closed
+UTILS: open the input file 'xpatterndna'
+UTILS: open succeeded for 'xpatterndna'
+UTILS: close the input file
+UTILS: the input file was closed
+AACC
+CAGT
+TACC
+
+enter FindMatches
+
+find matches of pattern 'AACC'
+MATCH AT 21 AACC
+MATCH AT 31 AACC
+EXTRA COMPS FOR AACC 87
+
+find matches of pattern 'CAGT'
+MATCH AT 65 CAGT
+EXTRA COMPS FOR CAGT 41
+
+find matches of pattern 'TACC'
+MATCH AT 62 TACC
+MATCH AT 96 TACC
+EXTRA COMPS FOR TACC 32
+leave FindMatches
+MAIN: Ending execution
+
+TIME***********************************************************************
+TIME CPU percent    0.00   0.00                    Sun Aug 21 09:31:36 2016
+TIME ending                0.00 u         0.00 s   Res:      794624
+TIME ending                0.00 u_t       0.01 s_t
+TIME***********************************************************************
+
+
+
