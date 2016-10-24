@@ -1,0 +1,409 @@
+Sim: 0 [EventEngine.EventDriver]  
+	Simulation Start Time: Tue Feb 02 15:37:44 EST 2016
+	Parameter file: C:\Users\Powell\Downloads\CSCE311\Project1\Misc\params4.osp
+
+	Legend:
+	  Thread(X:Y/S) means: thread X of task Y, status=S
+	  Task(X/S) means: task X, status=S
+	  Page(X:Y/Z) means: page X of task Y in frame Z
+	  Openfile(X:Y/Z) means: open file X of task Y on device Z
+	  Port(X:Y/S) means: port X of task Y has status S
+	Status code abbreviations:
+	  RD(ThreadReady), RU(ThreadRunning),
+	  Wn(ThreadWaiting, n=waitlevel), KL(ThreadKill)
+	  L(TaskLive), T(TaskTerm), NN(NONE)
+	  L(PortLive), D(PortDestroyed), NN(NONE)
+
+
+Sim:25000 [Utilities.SnapshotTaker]  
+	
+
+[Snapshot at 25000]
+
+MEMORY:
+  Free frames: 0(0%) out of 30
+  Locked frames: 5 out of 30
+  Reserved frames: 7 out of 30
+  Referenced frames: 23 out of 30
+
+Memory map:
+|----------|------------------------------|
+|Frame     |000000000011111111112222222222|
+|number    |012345678901234567890123456789|
+|----------|------------------------------|
+|free      |                              |
+|lock      |010111000000001000000000000000|
+|reserved  |RR RRR       RR               |
+|dirty     |  D   DDDDDDD  DDDDDDDDDDDDDDD|
+|referenced|  Y   YYYYYYY  YYYYYYYYYYYYYYY|
+|----------|------------------------------|
+|          |                              |
+|page      |33  223 1 443  2 5234421145454|
+|number    |946059347816030414879155922732|
+|----------|------------------------------|
+|          |                              |
+|owner     |                              |
+|task      |132122412244144113112111121311|
+|----------|------------------------------|
+
+
+Page table for Task 1:
+  Valid pages: 14 out of 64
+|------|----------------------------------------------------------------|
+|Page  |0000000000111111111122222222223333333333444444444455555555556666|
+|number|0123456789012345678901234567890123456789012345678901234567890123|
+|------|----------------------------------------------------------------|
+|valid | Y  Y          Y   Y    YY  Y Y      Y Y YY         YY          |
+|------|----------------------------------------------------------------|
+|      |                                                                |
+|frame | 1             2   2    12  1 1      1   22         22          |
+|number|36  7          3   4    52  8 2      9 0 19         68          |
+|------|----------------------------------------------------------------|
+
+Page table for Task 2:
+  Valid pages: 5 out of 64
+|------|----------------------------------------------------------------|
+|Page  |0000000000111111111122222222223333333333444444444455555555556666|
+|number|0123456789012345678901234567890123456789012345678901234567890123|
+|------|----------------------------------------------------------------|
+|valid |      Y Y        Y                        Y      Y              |
+|------|----------------------------------------------------------------|
+|      |                                                                |
+|frame |                                          2      2              |
+|number|      2 9        8       4   5            5      0              |
+|------|----------------------------------------------------------------|
+
+Page table for Task 3:
+  Valid pages: 2 out of 64
+|------|----------------------------------------------------------------|
+|Page  |0000000000111111111122222222223333333333444444444455555555556666|
+|number|0123456789012345678901234567890123456789012345678901234567890123|
+|------|----------------------------------------------------------------|
+|valid |                                               Y      Y         |
+|------|----------------------------------------------------------------|
+|      |                                                                |
+|frame |                                               2      1         |
+|number|                                  1            7      7         |
+|------|----------------------------------------------------------------|
+
+Page table for Task 4:
+  Valid pages: 4 out of 64
+|------|----------------------------------------------------------------|
+|Page  |0000000000111111111122222222223333333333444444444455555555556666|
+|number|0123456789012345678901234567890123456789012345678901234567890123|
+|------|----------------------------------------------------------------|
+|valid |   Y                             Y       Y    Y                 |
+|------|----------------------------------------------------------------|
+|      |                                                                |
+|frame |1  1                                     1    1                 |
+|number|4  3                             6       0    1                 |
+|------|----------------------------------------------------------------|
+
+
+DEVICES:
+  Device 0: Swap Device   (mount point: /vm/)
+	    Number of pages read = 203
+	    Number of pages written = 46
+	    Average number of cylinders swept per disk access = 4
+	      Total number of cylinders swept = 1121
+	    Service time per I/O request: 414
+	    Device queue:
+		IORB(Id(264),Device(0),Page(25:2/4),Diskblock(89),FileRead,Openfile(6:2/0),Thread(12:2/W2))
+		IORB(Id(265),Device(0),Page(29:2/5),Diskblock(93),FileRead,Openfile(6:2/0),Thread(23:2/W2))
+		IORB(Id(266),Device(0),Page(0:4/14),Diskblock(192),FileRead,Openfile(16:4/0),Thread(21:4/W2))
+		IORB(Id(267),Device(0),Page(0:1/3),Diskblock(0),FileRead,Openfile(0:1/0),Thread(3:1/W2))
+  Device 1: Disk   (mount point: /etc/go/)
+	    Number of pages read = 1
+	    Number of pages written = 9
+	    Average number of cylinders swept per disk access = 0
+	      Total number of cylinders swept = 3
+	    Service time per I/O request: 42
+	    Device queue:  Empty
+  Device 2: Disk   (mount point: /etc/)
+	    Number of pages read = 0
+	    Number of pages written = 4
+	    Average number of cylinders swept per disk access = 1
+	      Total number of cylinders swept = 2
+	    Service time per I/O request: 402
+	    Device queue:  Empty
+
+TASKS and THREADS:
+  CPU Utilization: 83.684%
+  Average service time per thread: 18831.363
+  Average normalized service time per thread: 0.047728594
+  Total number of tasks: 4
+  Running thread(s): none
+  Threads summary: 18 alive
+  Among live threads: 0 running
+                      18 suspended
+                      0 ready
+  ready queue = ()
+  running thread(s) = ()
+  waiting thread(s) = (1:1,2:1,3:1,6:1,7:1,9:1,10:1,11:1,12:2,13:1,14:1,15:3,16:2,17:1,19:1,20:1,21:4,23:2)
+  thread(s) in pagefault = (3:1,12:2,15:3,21:4,23:2)
+  killed thread(s) = (Thread(5:1/KL),Thread(4:1/KL),Thread(0:1/KL),Thread(8:1/KL))
+
+FILES:
+  Total number of files: 0
+  Total number of directories: 3
+  Total number of open files: 0
+  Device 0: 1280 out of 1536 blocks are free, 16.666668% used
+  Device 1: 25 out of 40 blocks are free, 37.5% used
+  Device 2: 9 out of 16 blocks are free, 43.75% used
+
+
+PORTS:
+  Number of Live Ports: 	4
+  Number of Ports Created: 	4
+  Number of Ports Destroyed: 	0
+  Number of Messages Sent: 	0
+  Number of Messages Received: 	0
+  Port(0:1/L)	Buffer length: 0;  Threads suspended: 1
+		 Port waiting queue: (Thread(2:1/W1))
+  Port(1:1/L)	Buffer length: 0;  Threads suspended: 1
+		 Port waiting queue: (Thread(6:1/W1))
+  Port(6:3/L)	Buffer length: 0;  Threads suspended: 0
+		 Port waiting queue: ()
+  Port(7:2/L)	Buffer length: 0;  Threads suspended: 0
+		 Port waiting queue: ()
+
+
+
+RESOURCES:
+  Total number of acquire() calls: 31
+  Total number of release() calls: 8
+
+    Resource Availability Table
+|---------------|-------------------------|
+|Resource Type  |0    1    2    3    4    |
+|---------------|-------------------------|
+|  Total        |8    8    8    6    9    |
+|---------------|-------------------------|
+|  Available    |3    1    0    0    9    |
+|---------------|-------------------------|
+
+
+
+    Resource Allocation Table
+|------------------|-----------------------------------|
+|Resource Type     |0      1      2      3      4      |
+|------------------|-----------------------------------|
+|Thread ID: 1:1    |1      2      0      0      0      |
+|Thread ID: 2:1    |0      1      0      3      0      |
+|Thread ID: 6:1    |3      0      0      0      0      |
+|Thread ID: 7:1    |0      4      0      2      0      |
+|Thread ID: 11:1   |0      0      6      0      0      |
+|Thread ID: 15:3   |1      0      1      0      0      |
+|Thread ID: 17:1   |0      0      1      1      0      |
+|------------------|-----------------------------------|
+
+
+
+
+The suspended  RRBs: 
+
+	RRB(Id(25),Thread(9:1/W0),Resource(3),Requested(2))
+	RRB(Id(22),Thread(20:1/W0),Resource(3),Requested(2))
+	RRB(Id(21),Thread(19:1/W0),Resource(3),Requested(2))
+	RRB(Id(31),Thread(17:1/W0),Resource(2),Requested(1))
+	RRB(Id(30),Thread(11:1/W0),Resource(3),Requested(2))
+	RRB(Id(28),Thread(1:1/W0),Resource(2),Requested(3))
+	RRB(Id(32),Thread(16:2/W0),Resource(2),Requested(1))
+	RRB(Id(29),Thread(14:1/W0),Resource(2),Requested(5))
+	RRB(Id(23),Thread(13:1/W0),Resource(3),Requested(3))
+	RRB(Id(13),Thread(10:1/W0),Resource(3),Requested(2))
+	RRB(Id(19),Thread(7:1/W0),Resource(3),Requested(3))
+
+-----------------------------------------------
+
+Sim:50000 [Utilities.SnapshotTaker]  
+	
+
+[Snapshot at 50000]
+
+MEMORY:
+  Free frames: 0(0%) out of 30
+  Locked frames: 11 out of 30
+  Reserved frames: 11 out of 30
+  Referenced frames: 20 out of 30
+
+Memory map:
+|----------|------------------------------|
+|Frame     |000000000011111111112222222222|
+|number    |012345678901234567890123456789|
+|----------|------------------------------|
+|free      |                              |
+|lock      |111111011011100000000000000000|
+|reserved  | RRRRR RRRRRR                 |
+|dirty     |D     D    DDDDD DDDDDDDDDDDDD|
+|referenced|Y     Y    YYYYY YYYYYYYYYYYYY|
+|----------|------------------------------|
+|          |                              |
+|page      |244231  5165 56  5424 5364 423|
+|number    |474792836709150624399185224780|
+|----------|------------------------------|
+|          |                              |
+|owner     |                              |
+|task      |224222223242222223222424222322|
+|----------|------------------------------|
+
+
+Page table for Task 2:
+  Valid pages: 18 out of 64
+|------|----------------------------------------------------------------|
+|Page  |0000000000111111111122222222223333333333444444444455555555556666|
+|number|0123456789012345678901234567890123456789012345678901234567890123|
+|------|----------------------------------------------------------------|
+|valid | YY Y Y Y        Y      Y   YYY           YY     Y     Y  YYY Y |
+|------|----------------------------------------------------------------|
+|      |                                                                |
+|frame | 11 2 1                     212           21     2     1  211 2 |
+|number| 2676 5 6   5    9      0  3899        4  58   1 0     3  214 4 |
+|------|----------------------------------------------------------------|
+
+Page table for Task 3:
+  Valid pages: 2 out of 64
+|------|----------------------------------------------------------------|
+|Page  |0000000000111111111122222222223333333333444444444455555555556666|
+|number|0123456789012345678901234567890123456789012345678901234567890123|
+|------|----------------------------------------------------------------|
+|valid |                                               Y      Y         |
+|------|----------------------------------------------------------------|
+|      |                                                                |
+|frame |                                               2      1         |
+|number|                                               7      7 8       |
+|------|----------------------------------------------------------------|
+
+Page table for Task 4:
+  Valid pages: 2 out of 64
+|------|----------------------------------------------------------------|
+|Page  |0000000000111111111122222222223333333333444444444455555555556666|
+|number|0123456789012345678901234567890123456789012345678901234567890123|
+|------|----------------------------------------------------------------|
+|valid | Y                                 Y                            |
+|------|----------------------------------------------------------------|
+|      |                                                                |
+|frame | 2                                 2                        1   |
+|number| 1                                 3        2               0   |
+|------|----------------------------------------------------------------|
+
+
+DEVICES:
+  Device 0: Swap Device   (mount point: /vm/)
+	    Number of pages read = 360
+	    Number of pages written = 82
+	    Average number of cylinders swept per disk access = 5
+	      Total number of cylinders swept = 2341
+	    Service time per I/O request: 536
+	    Device queue:
+		IORB(Id(479),Device(0),Page(59:2/11),Diskblock(123),FileWrite,Openfile(6:2/0),Thread(29:2/W2))
+		IORB(Id(480),Device(0),Page(1:2/12),Diskblock(65),FileWrite,Openfile(6:2/0),Thread(31:2/W2))
+		IORB(Id(481),Device(0),Page(44:4/2),Diskblock(236),FileRead,Openfile(16:4/0),Thread(34:4/W2))
+		IORB(Id(482),Device(0),Page(27:2/3),Diskblock(91),FileRead,Openfile(6:2/0),Thread(30:2/W2))
+		IORB(Id(483),Device(0),Page(12:2/5),Diskblock(76),FileRead,Openfile(6:2/0),Thread(24:2/W2))
+		IORB(Id(484),Device(0),Page(47:2/1),Diskblock(111),FileRead,Openfile(6:2/0),Thread(12:2/W2))
+		IORB(Id(485),Device(0),Page(39:2/4),Diskblock(103),FileRead,Openfile(6:2/0),Thread(23:2/W2))
+		IORB(Id(486),Device(0),Page(3:2/7),Diskblock(67),FileRead,Openfile(6:2/0),Thread(27:2/W2))
+		IORB(Id(487),Device(0),Page(56:3/8),Diskblock(184),FileRead,Openfile(8:3/0),Thread(15:3/W2))
+		IORB(Id(488),Device(0),Page(24:2/0),Diskblock(88),FileWrite,Openfile(6:2/0),Thread(36:0/W2))
+  Device 1: Disk   (mount point: /etc/go/)
+	    Number of pages read = 11
+	    Number of pages written = 21
+	    Average number of cylinders swept per disk access = 1
+	      Total number of cylinders swept = 19
+	    Service time per I/O request: 143
+	    Device queue:  Empty
+  Device 2: Disk   (mount point: /etc/)
+	    Number of pages read = 0
+	    Number of pages written = 4
+	    Average number of cylinders swept per disk access = 1
+	      Total number of cylinders swept = 2
+	    Service time per I/O request: 402
+	    Device queue:  Empty
+
+TASKS and THREADS:
+  CPU Utilization: 76.990005%
+  Average service time per thread: 25049.688
+  Average normalized service time per thread: 0.046779856
+  Total number of tasks: 3
+  Running thread(s): none
+  Threads summary: 14 alive
+  Among live threads: 0 running
+                      14 suspended
+                      0 ready
+  ready queue = ()
+  running thread(s) = ()
+  waiting thread(s) = (12:2,15:3,16:2,21:4,23:2,24:2,27:2,28:2,29:2,30:2,31:2,33:2,34:4,35:2)
+  thread(s) in pagefault = (12:2,15:3,21:4,23:2,24:2,27:2,29:2,30:2,31:2,34:4)
+  killed thread(s) = (Thread(5:1/KL),Thread(4:1/KL),Thread(0:1/KL),Thread(8:1/KL),Thread(2:1/KL),Thread(6:1/KL),Thread(26:1/KL),Thread(20:1/KL),Thread(19:1/KL),Thread(17:1/KL),Thread(14:1/KL),Thread(13:1/KL),Thread(11:1/KL),Thread(10:1/KL),Thread(9:1/KL),Thread(7:1/KL),Thread(3:1/KL),Thread(1:1/KL))
+
+FILES:
+  Total number of files: 0
+  Total number of directories: 3
+  Total number of open files: 0
+  Device 0: 1344 out of 1536 blocks are free, 12.5% used
+  Device 1: 15 out of 40 blocks are free, 62.5% used
+  Device 2: 2 out of 16 blocks are free, 87.5% used
+
+
+PORTS:
+  Number of Live Ports: 	5
+  Number of Ports Created: 	7
+  Number of Ports Destroyed: 	2
+  Number of Messages Sent: 	2
+  Number of Messages Received: 	2
+  Port(6:3/L)	Buffer length: 2;  Threads suspended: 0
+		 Port waiting queue: ()
+  Port(7:2/L)	Buffer length: 0;  Threads suspended: 1
+		 Port waiting queue: (Thread(33:2/W1))
+  Port(9:2/L)	Buffer length: 0;  Threads suspended: 0
+		 Port waiting queue: ()
+  Port(15:3/L)	Buffer length: 2;  Threads suspended: 0
+		 Port waiting queue: ()
+  Port(18:4/L)	Buffer length: 0;  Threads suspended: 0
+		 Port waiting queue: ()
+
+
+
+RESOURCES:
+  Total number of acquire() calls: 55
+  Total number of release() calls: 17
+
+    Resource Availability Table
+|---------------|-------------------------|
+|Resource Type  |0    1    2    3    4    |
+|---------------|-------------------------|
+|  Total        |8    8    8    6    9    |
+|---------------|-------------------------|
+|  Available    |2    1    2    2    6    |
+|---------------|-------------------------|
+
+
+
+    Resource Allocation Table
+|------------------|-----------------------------------|
+|Resource Type     |0      1      2      3      4      |
+|------------------|-----------------------------------|
+|Thread ID: 12:2   |0      0      2      2      0      |
+|Thread ID: 15:3   |0      1      0      0      0      |
+|Thread ID: 21:4   |4      0      0      0      0      |
+|Thread ID: 23:2   |2      2      0      0      2      |
+|Thread ID: 24:2   |0      0      3      0      0      |
+|Thread ID: 27:2   |0      0      0      0      1      |
+|Thread ID: 28:2   |0      1      0      0      0      |
+|Thread ID: 29:2   |0      0      0      2      0      |
+|Thread ID: 31:2   |0      3      0      0      0      |
+|Thread ID: 35:2   |0      0      1      0      0      |
+|------------------|-----------------------------------|
+
+
+
+
+The suspended  RRBs: 
+
+	RRB(Id(56),Thread(16:2/W0),Resource(0),Requested(3))
+	RRB(Id(51),Thread(28:2/W0),Resource(1),Requested(4))
+	RRB(Id(54),Thread(35:2/W0),Resource(1),Requested(4))
+
+-----------------------------------------------
+

@@ -1,0 +1,7 @@
+Main: Beginning execution
+Main: infile 'xinfileTreeA.txt'
+Main: outfile 'xoutputTreeA.txt'
+Main: logfile 'xlogTreeA.txt'
+Traversal: enter initialize
+Traversal: leave initialize
+Main: Ending execution

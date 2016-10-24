@@ -1,0 +1,100 @@
+#include "Main.h"
+
+/*******************************************************************************
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+ * Main program for Homework 2.
+ *
+ * Author/copyright:  Duncan Buell. All rights reserved.
+ * Date: 28 December 2014
+ *
+**/
+
+int main(int argc, char *argv[])
+{
+//  UINT seed = 1;
+
+  int howManyMachinesLower = 0;
+  int howManyMachinesUpper = 0;
+  int howManyVoters = 0;
+
+/*
+  int lowerInt = 0;
+  int nstars = 100;
+  int nrolls = 100000;
+  int p[100] = {};
+  int upperInt = 0;
+
+  double dev = 0.0;
+  double mean = 0.0;
+  double lowerDouble = 0.0;
+  double upperDouble = 0.0;
+*/
+
+  Queue queue;
+
+  cin >> howManyVoters >> howManyMachinesLower >> howManyMachinesUpper;
+
+  queue.initialize(howManyVoters, howManyMachinesLower, howManyMachinesUpper);
+
+  cout << "Run simulation for " << howManyVoters
+       << " and machine counts from " << howManyMachinesLower << " to "
+       << howManyMachinesUpper << endl;
+  queue.runSimulation();
+
+//  cout << queue.toString() << endl;
+
+/*
+  mean = 15.0;
+  dev = 5.0;
+  for (int i = 0; i < nrolls; ++i)
+  {
+    double number = queue.generateNormal(mean, dev);
+    if ((number >= 0.0) && (number < mean+2*dev)) ++p[int(number)];
+  }
+
+  for (int i = 0; i < int(mean+2*dev); ++i)
+  {
+    cout << Utils::Format(i, 3) << "-" << Utils::Format(i+1, 3)
+         << Utils::Format(p[i], 6) << ": ";
+    cout << string(p[i]*nstars/nrolls, '*') << endl;
+  }
+  cout << endl << endl;
+
+  for (int i = 0; i < 100; ++i) p[i] = 0;
+  lowerDouble =  0.0;
+  upperDouble = 20.0;
+  for (int i = 0; i < nrolls; ++i)
+  {
+    double number = queue.generateUniformDouble(lowerDouble, upperDouble);
+    if ((number >= 0.0) && (number < upperDouble)) ++p[int(number)];
+  }
+
+  for (int i = int(lowerDouble); i < int(upperDouble); ++i)
+  {
+    cout << Utils::Format(i, 3) << "-" << Utils::Format(i+1, 3)
+         << Utils::Format(p[i], 6) << ": ";
+    cout << string(p[i]*nstars/nrolls, '*') << endl;
+  }
+  cout << endl << endl;
+
+  for (int i = 0; i < 100; ++i) p[i] = 0;
+  lowerInt =  0;
+  upperInt = 33;
+  for (int i = 0; i < nrolls; ++i)
+  {
+    int number = queue.generateUniformInt(lowerInt, upperInt);
+    if ((number >= lowerInt) && (number < upperInt)) ++p[int(number)];
+  }
+
+  for (int i = lowerInt; i < upperInt; ++i)
+  {
+    cout << Utils::Format(i, 3) << "-" << Utils::Format(i+1, 3)
+         << Utils::Format(p[i], 6) << ": ";
+    cout << string(p[i]*nstars/nrolls, '*') << endl;
+  }
+  cout << endl << endl;
+*/
+
+  return 0;
+}
+

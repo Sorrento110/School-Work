@@ -1,0 +1,250 @@
+#include "Queue.h"
+
+/******************************************************************************
+ *3456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789
+ * Class 'Queue' for the queueing theory computation.
+ *
+ * Author: Duncan A. Buell
+ * Date last modified: 30 December 2014
+**/
+
+/******************************************************************************
+ * Constructor
+**/
+Queue::Queue()
+{
+//  MyRandom random;
+  cout << "Default constructor" << endl;
+}
+
+/******************************************************************************
+ * Constructor
+Queue::Queue(unsigned int seed)
+{
+  MyRandom random(seed);
+}
+**/
+
+/******************************************************************************
+ * Destructor
+**/
+Queue::~Queue()
+{
+}
+
+/******************************************************************************
+ * Accessors and Mutators
+**/
+
+/******************************************************************************
+ * General functions.
+**/
+
+/******************************************************************************
+ * Function 'initialize'.
+ * This initializes the voter queue.
+ *
+ * Parameters:
+ *   howMany - the number of RNs to generate
+ *   mean - the mean of the normally distributed RNs
+ *   dev - the standard deviation of the normally distributed RNs
+**/
+//void Queue::initialize(unsigned int seed, int howManyVoters, int howManyMachines)
+void Queue::initialize(int howManyVoters, int howManyMachines)
+{
+  vector<OneVoter> votersAtEqualTime;
+  cout << "enter initialize" << endl;
+
+  this->howManyMachines = howManyMachines;
+
+  for (int i = 0; i < howManyVoters; ++i)
+  {
+    int arrival = this->random.randomUniformInt(0, 72);
+    int duration = int(this->random.randomNormal(30, 5));
+    OneVoter voter(i, arrival, duration);
+    votersAtEqualTime = this->votersPending[arrival];
+    votersAtEqualTime.push_back(voter);
+    this->votersPending[arrival] = votersAtEqualTime;
+  }
+
+//  cout << this->toString() << endl;
+
+  cout << "leave initialize" << endl;
+}
+
+/******************************************************************************
+ * Function 'runSimulation'.
+**/
+void Queue::runSimulation()
+{
+  cout << "enter runSimulation" << endl;
+  
+  cout << this->toString() << endl;
+  
+  // initialize -- all machines start empty
+  map<int, vector<OneVoter> >::iterator iter = this->votersPending.begin();
+  for (int machineNum = 0; machineNum < this->howManyMachines; ++machineNum)
+  {
+    vector<OneVoter> vecPending = iter->second;
+    OneVoter oneVoter = vecPending[0];
+    int finishTime = oneVoter.getTimeArrive() + oneVoter.getTimeVoteDuration();
+    int waitTime = 0;
+    oneVoter.assignMachine(machineNum, oneVoter.getTimeArrive(), finishTime, waitTime);
+    
+    vector<OneVoter> vecVoting = this->votersVoting[finishTime]; 
+    vecVoting.push_back(oneVoter);
+    this->votersVoting[finishTime] = vecVoting; 
+    if (1 == vecPending.size())
+    {
+      this->votersPending.erase(iter);
+    }
+    else
+    {
+      vecPending.erase(vecPending.begin());
+      this->votersPending[iter->first] = vecPending;
+    }
+  }
+
+  cout << "after time zero assignment" << endl;
+  cout << this->toString() << endl;
+
+  for (int time = 20; time < 30; ++time)
+  {
+    // first we see if a voter is finished voting
+    vector<vector<OneVoter>::iterator> theIters; // iterators to erase later
+    vector<OneVoter> vecVoting = this->votersVoting[time]; 
+    vector<OneVoter> vecPending = this->votersPending[time]; 
+    if (vecVoting.size() > 0)
+    {
+      // we have voters (at least one) who are finishing at this time 
+      // save the list of iterators for those voters
+      for (vector<OneVoter>::iterator iter = vecVoting.begin();
+                             iter != vecVoting.end(); ++iter)
+      {
+        cout << "VOTING TIME " << time << " " << (*iter).toString() << endl;
+        (*iter).finishedVoting();
+        theIters.push_back(iter);
+      }
+
+/*
+      // erase the voters who just finished from the voting map
+      // then add a voter to 'voting' if there is someone waiting
+      for (int i = 0; i < theIters.size(); ++i)
+      {
+        cout << "ERASE VOTER " << time << ": " << (*(theIters[i])).toString() << endl;
+        
+        // add this voter to the list of done voters at this time
+        vector<OneVoter> votersDone = this->votersDoneVoting[time];
+        votersDone.push_back(*(theIters[i]));
+        this->votersDoneVoting[time] = votersDone;
+
+        // erase the voter from the list of voters on the currently voting list
+        vecVoting.erase(theIters[i]);
+        this->votersVoting[time] = vecVoting;
+
+        // add a pending voter to the voting list if there is someone pending
+        // and delete them from the pending list
+        if (vecPending.size() > 0)
+        {
+          OneVoter oneVoter = vecPending[0];
+          int finishTime = oneVoter.getTimeArrive() + oneVoter.getTimeVoteDuration();
+          int waitTime = 0;
+          oneVoter.assignMachine(machineNum, oneVoter.getTimeArrive(), finishTime, waitTime);
+
+          vector<OneVoter> vecVoting = this->votersVoting[finishTime]; 
+          vecVoting.push_back(oneVoter);
+          this->votersVoting[finishTime] = vecVoting; 
+          if (1 == vecPending.size())
+          {
+            this->votersPending.erase(iter);
+          }
+          else
+          {
+            vecPending.erase(vecPending.begin());
+            this->votersPending[iter->first] = vecPending;
+          }
+        }
+      }
+*/
+
+      if (0 == this->votersVoting[time].size())
+      {
+        this->votersVoting.erase(time);
+        cout << "ERASE TIME  " << time << endl;
+      }
+    }
+    cout << "after time " << time << endl;
+    cout << this->toString() << endl;
+    
+  }
+
+  cout << "leave runSimulation" << endl;
+}
+
+/******************************************************************************
+ * Function 'toString'.
+ * This is the usual 'toString' to output the basic data of this class.
+ *
+ * Returns:
+ *   the 'toString'
+**/
+string Queue::toString()
+{
+  string s = "";
+
+  s += "PENDING VOTERS\n";
+  for (map<int, vector<OneVoter> >::iterator iter = this->votersPending.begin();
+                                             iter != this->votersPending.end(); ++iter)
+  {
+    vector<OneVoter> votersAtEqualTime = iter->second;
+    s += this->toStringVector(votersAtEqualTime);
+  }
+
+  s += "\nVOTING VOTERS\n";
+  for (map<int, vector<OneVoter> >::iterator iter = this->votersVoting.begin();
+                                             iter != this->votersVoting.end(); ++iter)
+  {
+    vector<OneVoter> votersAtEqualTime = iter->second;
+    s += this->toStringVector(votersAtEqualTime);
+  }
+
+  s += "\nDONE VOTING VOTERS\n";
+  for (map<int, vector<OneVoter> >::iterator iter = this->votersDoneVoting.begin();
+                                             iter != this->votersDoneVoting.end(); ++iter)
+  {
+    vector<OneVoter> votersAtEqualTime = iter->second;
+    s += this->toStringVector(votersAtEqualTime);
+  }
+
+  return s;
+}
+/******************************************************************************
+ * Function 'toStringVector'.
+ * This is the 'toString' for a 'vector' of 'OneVoter'.
+ *
+ * Returns:
+ *   the 'toString'
+**/
+string Queue::toStringVector(vector<OneVoter> v)
+{
+  string s = "";
+
+  bool firstTime = true;
+  int vSize = v.size();
+  for (vector<OneVoter>::iterator iter2 = v.begin();
+                                  iter2 != v.end(); ++iter2)
+  {
+    if (firstTime)
+    {
+      firstTime = false;
+      s += Utils::Format(vSize, 4);
+      s += " " + (*iter2).toString() + "\n";
+    }
+    else
+    {
+      s += "     " + (*iter2).toString() + "\n";
+    }
+  }
+
+  return s;
+}

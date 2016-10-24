@@ -1,0 +1,4 @@
+ZORK NO SEED 
+enter initialize
+leave initialize
+Voters: 20, timeSteps: 100, machines: 3 to 3, mean & dev vote times: 30 5
