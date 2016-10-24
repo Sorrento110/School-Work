@@ -1,0 +1,135 @@
+[1mtrue.[0m
+
+2 ?- acted_in(leonardo_dicaprio, babel).
+
+
+[1;31mfalse.[0m
+
+3 ?- directed(X, district_9).
+
+
+X = neill_blomkamp.
+
+4 ?- acted_in(X, click), acted_in(X, the_aviator).
+
+
+X = kate_beckinsale.
+
+5 ?- released(X, 2010), \+ acted_in(jennifer_anniston, X).
+
+
+X = shutter_island ;[1m;[0m
+X = iron_man_2.
+
+6 ?- directed(X, Y), released(Y, 2009).
+
+
+X = neill_blomkamp,
+Y = district_9 ;[1m;[0m
+[1;31mfalse.[0m
+
+7 ?- directed(X, Y), directed(X, Z), Y \= Z.
+
+
+X = jj_abrams,
+Y = star_wars_the_force_awakens,
+Z = super_8 ;[1m;[0m
+X = jj_abrams,
+Y = super_8,
+Z = star_wars_the_force_awakens ;[1m;[0m
+X = jon_favreau,
+Y = iron_man,
+Z = iron_man_2 ;[1m;[0m
+X = jon_favreau,
+Y = iron_man_2,
+Z = iron_man ;[1m;[0m
+[1;31mfalse.[0m
+
+8 ?- directed(X, Y), directed(Z, Y), X \= Z.
+
+
+X = micheal_powell,
+Y = a_canterbury_tale,
+Z = emeric_pressburger ;[1m;[0m
+X = emeric_pressburger,
+Y = a_canterbury_tale,
+Z = micheal_powell ;[1m;[0m
+[1;31mfalse.[0m
+
+9 ?- released(X, 2008), released(Y, 2008), X \= Y, acted_in(Z, X), acted_in(Z, Y).
+
+
+X = iron_man,
+Y = tropic_thunder,
+Z = robert_downey_jr ;[1m;[0m
+X = iron_man,
+Y = the_incredible_hulk,
+Z = robert_downey_jr ;[1m;[0m
+X = tropic_thunder,
+Y = iron_man,
+Z = robert_downey_jr ;[1m;[0m
+X = tropic_thunder,
+Y = the_incredible_hulk,
+Z = robert_downey_jr ;[1m;[0m
+X = the_incredible_hulk,
+Y = iron_man,
+Z = robert_downey_jr ;[1m;[0m
+X = the_incredible_hulk,
+Y = tropic_thunder,
+Z = robert_downey_jr ;[1m;[0m
+[1;31mfalse.[0m
+
+10 ?- released(X, A), released(Y, A), released(Z, A), X \= Y, X \= Z, Y \= Z, acted_in(B, X), acted_in(B, Y), acted_in(B, Z).
+
+
+X = iron_man,
+A = 2008,
+Y = tropic_thunder,
+Z = the_incredible_hulk,
+B = robert_downey_jr ;[1m;[0m
+X = iron_man,
+A = 2008,
+Y = the_incredible_hulk,
+Z = tropic_thunder,
+B = robert_downey_jr ;[1m;[0m
+X = tropic_thunder,
+A = 2008,
+Y = iron_man,
+Z = the_incredible_hulk,
+B = robert_downey_jr ;[1m;[0m
+X = tropic_thunder,
+A = 2008,
+Y = the_incredible_hulk,
+Z = iron_man,
+B = robert_downey_jr ;[1m;[0m
+X = the_incredible_hulk,
+A = 2008,
+Y = iron_man,
+Z = tropic_thunder,
+B = robert_downey_jr ;[1m;[0m
+X = the_incredible_hulk,
+A = 2008,
+Y = tropic_thunder,
+Z = iron_man,
+B = robert_downey_jr ;[1m;[0m
+[1;31mfalse.[0m
+
+11 ?- released(X, A), released(Y, B), B \= A, directed(P, X), directed(P, Y), acted_in(G, X), acted_in(G, Y).   
+
+X = iron_man,
+A = 2008,
+Y = iron_man_2,
+B = 2010,
+P = jon_favreau,
+G = robert_downey_jr ;[1m;[0m
+X = iron_man_2,
+A = 2010,
+Y = iron_man,
+B = 2008,
+P = jon_favreau,
+G = robert_downey_jr ;[1m;[0m
+[1;31mfalse.[0m
+
+12 ?- noprotocol.
+
+

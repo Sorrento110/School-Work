@@ -1,0 +1,119 @@
+[1mtrue.[0m
+
+5 ?- mother(X,Y).
+
+
+[31;1mERROR: toplevel: Undefined procedure: mother/2 (DWIM could not correct goal)
+[0m6 ?- mother(X,Y).
+
+
+X = antonietta,
+Y = alberto [1m.[0m
+
+7 ?- grand_parent(X,Y).
+
+
+X = guido,
+Y = marco [1m.[0m
+
+8 ?- great_grand_mother(X,Y).
+
+
+X = antonietta,
+Y = dante [1m.[0m
+
+9 ?- sibling(X,Y).
+
+
+X = giulio,
+Y = alberto [1m.[0m
+
+10 ?- brother(X,Y).
+
+
+X = dante,
+Y = clara [1m.[0m
+
+11 ?- sister(X,Y).
+
+
+X = clara,
+Y = dante [1m.[0m
+
+12 ?- half_sibling(X,Y).
+
+
+X = giulio,
+Y = alberto [1m.[0m
+
+13 ?- full_sibling(X,Y).
+
+
+X = clara,
+Y = dante [1m.[0m
+
+14 ?- first_cousin(X,Y).
+
+
+X = dante,
+Y = sam [1m.[0m
+
+15 ?- second_cousin(X,Y).
+
+
+X = dante,
+Y = sara [1m.[0m
+
+16 ?- half_first_cousin(X,Y).
+
+
+X = donata,
+Y = marco [1m.[0m
+
+17 ?- double_first_cousin(X,Y).
+
+
+[1;31mfalse.[0m
+
+18 ?- first_cousin_twice_removed(X,Y).
+
+
+[1;31mfalse.[0m
+
+19 ?- descendant(X,Y).
+
+
+X = alberto,
+Y = guido [1m.[0m
+
+20 ?- ancestor(X,Y).
+
+
+X = guido,
+Y = alberto [1m.[0m
+
+21 ?- cousin(X,Y).
+
+
+X = dante,
+Y = sara [1m.[0m
+
+22 ?- closest_common_ancestor(X,Y,Z).
+
+
+X = guido,
+Y = alberto,
+Z = giulio [1m.[0m
+
+23 ?- write_descendant_chain(X,Y).
+
+
+alberto is a child of guido
+X = alberto,
+Y = guido [1m.[0m
+
+24 ?- noprotocol
+|    
+|    .
+
+
